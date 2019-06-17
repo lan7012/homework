@@ -1,8 +1,6 @@
-import time as t
 import random as r
 def printtip():
     print("这个程序模拟两个选手A和B的某种竞技比赛")
-    t.sleep(1)
     print("程序运行需要A和B的能力值（以0到1的小数表示）")
 
 def gameover(a, b):

@@ -10,10 +10,15 @@ cap = {
   "deviceName": "",
     #安装包放入SDK目录下，拖动到appt.exe
     #运行命令 C:\SDK\build-tools\29.0.0>aapt.exe dump badging 安装包拖动
+  "udid":device,#识别多台设备
   "appPackage": "",
   "appActivity": "",
     #记录启动app的行为（跳过、版本升级）
-  "noReset": True
+  "noReset": True,
+  #可输入中文
+  "unicodekeyboard":True,
+  #切换appium输入法跟手机输入法
+  "resetkeyboard":True
 }
 #本地客户端连接
 driver = webdriver.Remote("http://localhost:4723/wd/hub", cap)

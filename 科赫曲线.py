@@ -12,8 +12,13 @@ def main():
     t.pd()
     t.hideturtle()
     t.pensize(3)
+    t.pencolor("white")
+    t.bgcolor("black")
+    t.begin_fill()
+    t.color("white")
     for i in range(3):
         t.seth(-120* i)
         kh(300, 3)
+    t.end_fill()
     t.done()
 main()
